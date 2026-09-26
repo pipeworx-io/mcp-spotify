@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-spotify",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Spotify MCP — Web API via client_credentials OAuth",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-d67ba76bec317dd319c773c7504896e679f5eb01e3c9d6c901604ee3dca636c8",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "sourceHash": "v1-bbe9d5fbe413f6a91aa153dda0f6cc9c90c035e906005bb017d34702d24f549a",
+    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
   }
 }
