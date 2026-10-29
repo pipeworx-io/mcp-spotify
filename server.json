@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/spotify",
   "title": "Spotify",
   "description": "Spotify MCP — Web API via client_credentials OAuth",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/spotify",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-spotify",

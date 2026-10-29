@@ -1,0 +1,126 @@
+[
+  {
+    "name": "search",
+    "description": "Search the Spotify catalog. type = comma-separated of album, artist, playlist, track, show, episode, audiobook. Returns matched items in named sections.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query"
+        },
+        "type": {
+          "type": "string",
+          "description": "Comma-separated types (default \"track\")"
+        },
+        "market": {
+          "type": "string",
+          "description": "ISO 3166-1 alpha-2 market code (e.g., \"US\")"
+        },
+        "limit": {
+          "type": "number",
+          "description": "1-50 (default 20)"
+        },
+        "offset": {
+          "type": "number",
+          "description": "0-1000 (default 0)"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_track",
+    "description": "Single track by Spotify ID. Returns artists, album, popularity, preview URL, duration.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "track_id": {
+          "type": "string",
+          "description": "Spotify track ID (base62)"
+        },
+        "market": {
+          "type": "string",
+          "description": "Market for availability"
+        }
+      },
+      "required": [
+        "track_id"
+      ]
+    }
+  },
+  {
+    "name": "get_artist",
+    "description": "Artist record: name, genres, popularity, followers, images.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "artist_id": {
+          "type": "string",
+          "description": "Spotify artist ID"
+        }
+      },
+      "required": [
+        "artist_id"
+      ]
+    }
+  },
+  {
+    "name": "get_album",
+    "description": "Fetch a Spotify album by album_id. Returns name, artists, release date, total tracks, label, genres, popularity, images, and full tracklist with track IDs and durations. Optional market filter.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "album_id": {
+          "type": "string",
+          "description": "Spotify album ID"
+        },
+        "market": {
+          "type": "string",
+          "description": "Market for availability"
+        }
+      },
+      "required": [
+        "album_id"
+      ]
+    }
+  },
+  {
+    "name": "get_artist_top_tracks",
+    "description": "Top tracks for an artist in a market (Spotify recommendation).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "artist_id": {
+          "type": "string",
+          "description": "Spotify artist ID"
+        },
+        "market": {
+          "type": "string",
+          "description": "ISO market code (default \"US\")"
+        }
+      },
+      "required": [
+        "artist_id"
+      ]
+    }
+  },
+  {
+    "name": "get_audio_features",
+    "description": "Audio features for a track: tempo (BPM), key, mode (major/minor), time_signature, energy, danceability, valence, acousticness, instrumentalness, liveness, speechiness, loudness.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "track_id": {
+          "type": "string",
+          "description": "Spotify track ID"
+        }
+      },
+      "required": [
+        "track_id"
+      ]
+    }
+  }
+]
