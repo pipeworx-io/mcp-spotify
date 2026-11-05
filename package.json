@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-spotify",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Spotify MCP — Web API via client_credentials OAuth",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "spotify",
     "gatewaySlug": "spotify",
-    "sourceHash": "v1-8680da33ebbf90ffe1413ebf4fa73526425814035e3496d4d45abb08e442c6c6",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-a25e5247c85ef0efdc33d43ed640aa59d81d3ba75cf66ed3ba2217c6d1db1d25",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
